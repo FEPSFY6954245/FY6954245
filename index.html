@@ -4,12 +4,13 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Banner -->
 <img src="download.png" alt="Banner" width="1000" height="300">
 
 <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
 <h2>Student URN: 6954245</h2>
 <hr>
-<h2 style="font-family:calibri;"><b>Conference paper: Bridge Deck Repairs</b></h2>
+<h2 style="font-family:calibri;"><b>The future of chemical engineering and therapeutic diabetes</b></h2>
 <hr>
 
 <!-- Table of contents -->
@@ -50,6 +51,11 @@
     margin-left: 50px;
     max-width: 900px;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 </style>
 
 </head>
@@ -60,152 +66,160 @@
 
 <!-- ABSTRACT -->
 <h3 id="abstract">Abstract</h3>
-<p class="ex1">
-Monitoring blood glucose levels is critical for a diabetic patient. To ensure that glycaemic control is obtained, 
-there are a range of anti-diabetic treatments which cannot restore the lost functional beta-cell mass but can help 
-in the management of glycaemia. These treatments include monitoring of the blood glucose levels via skin mounted 
-patches (transdermal applications) and subcutaneous methods such as injecting insulin into a diabetic person, 
-meanwhile chemists and engineers alike are investigating other approaches such as oral, nasal and buccal applications. 
-Given the evolving nature of diabetes, there is an increase in research of treatments, and a large variety of 
-therapeutic approaches have been proposed. Despite the struggle in monitoring diabetes, engineers have proposed many 
-ways in which alleviate the “disturbances” that may come with managing diabetes.
+<p class="ex1" id="abstractSection">
+Monitoring blood glucose levels is critical for a diabetic patient. To ensure that glycaemic control is obtained, there are 
+a range of anti-diabetic treatments which cannot restore the lost functional beta-cell mass but can help in the management 
+of glycaemia. These treatments include monitoring of the blood glucose levels via skin mounted patches i.e. transdermal 
+applications and subcutaneous methods such as injecting insulin into a diabetic person. Meanwhile, chemists and engineers 
+alike are investigating other approaches such as oral, nasal and buccal applications. Given the evolving nature of diabetes, 
+there is an increase in research of treatments and a large variety of therapeutic approaches have been proposed. Despite the 
+struggle in monitoring diabetes, engineers have proposed many ways in which alleviate the “disturbances” that may come 
+with managing diabetes.
 </p>
 
 <!-- INTRODUCTION -->
 <h3 id="introduction">Introduction: What is diabetes?</h3>
-<p class="ex1">
+<p class="ex1" id="introSection">
 Diabetes is a metabolic disease defined by elevated blood glucose levels. It is comprised of four types: type 1, type 2, 
 pre-diabetes and gestational diabetes, with type 1 and 2 accounting for ~95% of diagnosed forms worldwide. Type 1 diabetes 
 involves autoimmune destruction of beta-cells which produce insulin, whereas type 2 diabetes involves insulin resistance 
-where beta-cells are either lost or impaired. If untreated this can lead to hyperglycaemia (causing cardiovascular and 
-neurological complications) or hypoglycaemia (leading to fatigue and possibly premature death).  
+where beta-cells are either lost or impaired. If untreated this can result in hyperglycaemia (causing cardiovascular and 
+neurological complications) or hypoglycaemia (leading to fatigue and possibly premature death).
 <br><br>
 The worldwide distribution of diabetes predicted by the WHO suggests ~700 million people affected by 2045 
-(<a href="https://www.zmescience.com/science/diabetes-rising-worldwide-one-in-11-adults-affected/">Diabetes rising worldwide: 1 in 11 adults affected (2019)</a>).  
-Diabetes is becoming one of the leading causes of physical complications and infections, significantly reducing life expectancy.  
-<br><br>
-<b>Figure 1:</b> Worldwide distribution of adults with diabetes, predicted by WHO from 2019–2045.
+(<a href="https://www.zmescience.com/science/diabetes-rising-worldwide-one-in-11-adults-affected/">Diabetes rising worldwide: 1 in 11 adults affected (2019)</a>).
+</p>
+
+<!-- FIGURE -->
+<p class="ex1">
+  <img src="images/diabetes-map.jpg" alt="Worldwide diabetes distribution map (2019)">
+  <br>
+  <small><i>Figure 1 — Worldwide distribution of adults with diabetes (WHO, 2019–2045)</i></small>
 </p>
 
 <!-- SECTION 1 -->
 <h3 id="monitoring">1. Monitoring diabetes: Cause and prevention</h3>
+<p class="ex1" id="monitorSection">
+Blood glucose levels can be monitored via the meal a patient consumes, proving to be a major disturbance in varying blood 
+glucose levels.
+<br><br>
+To be diagnosed as diabetic, a person’s blood glucose level must meet criteria based on clinical testing:
+</p>
+
+<ul>
+  <li>Fasting plasma glucose test (FPG): fasting for 8 h before the test.</li>
+  <li>Oral glucose tolerance test (OGTT): patient consumes 75 g glucose syrup; blood glucose measured after 2 hours.</li>
+  <li>Glycated haemoglobin (HbA1c): lab measurement of average blood glucose over 3 months.</li>
+</ul>
+
 <p class="ex1">
-Blood glucose levels can be monitored via diet, which is a major disturbance influencing glucose levels. 
-Diagnosis of diabetes can occur through three clinical methods 
-(<a href="https://www.diabetes.org.uk/about-diabetes/test-for-diabetes/">Diabetes Diagnosis & Tests | ADA</a>):
+Type 2 diabetes accounts for ~90% of the population in the UK 
+(<a href="https://www.diabetes.org.uk/about-diabetes/test-for-diabetes/">Khan, R. et al. (2019)</a>), strongly associated with obesity.
 <br><br>
-<br>– Fasting plasma glucose (FPG)
-<br>– Oral glucose tolerance test (OGTT)
-<br>– Glycated haemoglobin (HbA1c) laboratory test 
-<br><br>
-Type 2 diabetes accounts for ~90% of cases in the UK 
-(<a href="https://www.diabetes.org.uk/about-diabetes/test-for-diabetes/">Khan, R. et al. (2019)</a>) and is strongly associated with obesity.  
-<br><br>
-Studies show that individuals with a BMI higher than 35 have a significantly higher chance of developing T2DM than those 
-with a BMI under 22. For Asians, increased risk begins at even lower BMI values (15–20). New research suggests waist 
-circumference may be a better predictor of T2DM risk than BMI, and weight loss significantly reduces risk 
-(<a href="https://pubmed.ncbi.nlm.nih.gov/22281657/">Cheung, B.M.Y. & Li, C. (2012)</a>).  
-<br><br>
-Lifestyle plays a major role; sedentary behaviour (e.g., prolonged TV watching) decreases metabolic rate and increases BMI. 
-Replacing 30 minutes of sedentary time with physical activity can improve insulin sensitivity by 15%.  
-<br><br>
-Men are more frequently diagnosed with diabetes due to differences in fat distribution (more visceral fat). Environmental 
-factors such as stress, smoking, alcohol consumption and sleep affect risk as well.  
-<br><br>
-Hypertension and diabetes commonly overlap, and may share metabolic pathways related to obesity 
+Studies reveal that BMI, waist circumference, sedentary lifestyle, stress, smoking, alcohol consumption and sleep patterns all 
+play roles in diabetes risk. Research also shows hypertension and diabetes may share metabolic origins linked to obesity 
 (<a href="https://pubmed.ncbi.nlm.nih.gov/22281657/">Cheung & Li, 2012</a>).
 </p>
 
 <!-- SECTION 2 -->
 <h3 id="treating">2. Treating diabetes: drug delivery and development</h3>
-<p class="ex1">
-Common home monitoring uses glucometers, which require a finger prick blood sample. Environmental factors may influence 
-accuracy. Modern alternatives include glucose-sensing patches and insulin pumps that measure glucose in interstitial fluid.  
+<p class="ex1" id="treatSection">
+Home blood glucose tests such as glucometers require a finger prick blood sample. Environmental factors may affect accuracy.
+Modern alternatives include glucose-sensing patches, insulin pumps, buccal delivery systems, oral spray insulin and 
+subcutaneous injections.
 <br><br>
-Buccal applications offer advantages such as avoiding first-pass metabolism, while oral spray forms of insulin provide a 
-less invasive method—but are not a full replacement for traditional insulin intake.  
-<br><br>
-Subcutaneous injections remain the most common method of insulin delivery despite discomfort. Improvements include 
-“ultra-rapid acting” insulin which aims to reduce hypoglycaemia risk and improve control of glucose levels.
+Subcutaneous insulin injections remain the most common delivery method, but recent innovations such as “ultra-rapid acting” 
+insulin aim to reduce hypoglycaemia risks and improve glycaemic control.
 </p>
 
 <!-- CONCLUSIONS -->
 <h3 id="conclusions">Conclusions</h3>
-<p class="ex1">
-Despite being highly prevalent, diabetes can be prevented by maintaining a healthy lifestyle and diet. Research continues 
-to explore more efficient insulin delivery methods that aim to match the effectiveness of subcutaneous injections while 
-reducing discomfort. This article provides insight into diabetes, its causes, treatment options and future technological 
-advances in drug delivery.
+<p class="ex1" id="conclusionSection">
+Despite diabetes being one of the most prevalent diseases worldwide, prevention can be achieved through healthy lifestyle 
+behaviours. Ongoing research continues to explore improved insulin delivery methods that maintain rapid action while reducing 
+discomfort. This article provides insight into diabetes, its causes, treatments and how engineering developments may improve 
+therapeutic outcomes.
 </p>
 
 <!-- REFERENCES -->
 <h3 id="references">References</h3>
+<p class="ex1">1. Classification and diagnosis of diabetes (2014). ADA Medical Affairs Article Collection.</p>
+<p class="ex1">2. Diabetes Diagnosis & Tests | ADA. https://diabetes.org/about-diabetes/diagnosis</p>
+<p class="ex1">3. Khan, R. et al. (2019). From Pre-Diabetes to Diabetes: Diagnosis, Treatments and Translational research. Medicina, 55(9), 546.</p>
+<p class="ex1">4. Szunerits, S. et al. (2021). Technological advances on managing diabetes: present and future concepts.</p>
+<p class="ex1">5. Cheung, B.M.Y. & Li, C. (2012). Diabetes and hypertension: Is there a common metabolic pathway?</p>
+<p class="ex1">6. Diabetes rising worldwide: 1 in 11 adults affected (2019).</p>
 
-<p class="ex1">
-1. 'Classification and diagnosis of diabetes' (2014). ADA Medical Affairs Article Collection.  
-</p>
+<br><br>
 
-<p class="ex1">
-2. Diabetes Diagnosis & Tests | ADA. https://diabetes.org/about-diabetes/diagnosis  
-</p>
+<!-- WORD COUNT -->
+<div id="wordCountBox" 
+     style="font-size:18px; margin-top:20px; padding:10px; border:1px solid #000; width:fit-content;">
+    Total Word Count: Fetching...
+</div>
 
-<p class="ex1">
-3. Khan, R. et al. (2019). From Pre-Diabetes to Diabetes: Diagnosis, Treatments and Translational research. Medicina, 55(9), 546.  
-</p>
+<script>
+function countWords() {
+    function wc(id) {
+        let text = document.getElementById(id).innerText;
+        text = text.trim().replace(/\s+/g, " ");
+        if (text.length === 0) return 0;
+        return text.split(" ").length;
+    }
 
-<p class="ex1">
-4. Szunerits, S. et al. (2021). The impact of chemical engineering and technological advances on managing diabetes.  
-</p>
+    const total =
+        wc("introSection") +
+        wc("monitorSection") +
+        wc("treatSection") +
+        wc("conclusionSection");
 
-<p class="ex1">
-5. Cheung, B.M.Y. & Li, C. (2012). Diabetes and hypertension: Is there a common metabolic pathway? Current Atherosclerosis Reports.  
-</p>
+    document.getElementById("wordCountBox").innerHTML =
+        "Total Word Count (Introduction → Conclusions): " + total;
+}
+countWords();
+</script>
 
-<p class="ex1">
-6. Diabetes rising worldwide: 1 in 11 adults affected (2019).  
-</p>
-<!-- Last Modified Time Display -->
-<div id="lastModified" style="font-size:18px; margin-top:20px; padding:10px; border:1px solid #000; width: fit-content;">
+<br><br>
+
+<!-- LAST MODIFIED TIME -->
+<div id="lastModified" 
+     style="font-size:18px; margin-top:20px; padding:10px; border:1px solid #000; width:fit-content;">
     Last Modified Time: Fetching...
 </div>
 
-<button onclick="verifyLastUpdatedTime()" style="margin-top:10px; padding:8px 16px;">
+<button onclick="verifyLastUpdatedTime()" 
+        style="margin-top:10px; padding:8px 16px;">
     Verify Last Modified Time
 </button>
 
 <script>
-// Your repo details
-const username = "fepsfy6954245";     // <-- YOUR USERNAME
-const repository = "FY6954245";        // <-- YOUR REPOSITORY
+const username = "fepsfy6954245";
+const repository = "FY6954245";
 
-// Function to fetch last updated time
 async function getLastUpdatedTime() {
     const apiURL = `https://api.github.com/repos/${username}/${repository}/commits?per_page=1`;
 
     try {
         const response = await fetch(apiURL);
         const data = await response.json();
-
         const lastCommitDate = new Date(data[0].commit.author.date);
         document.getElementById("lastModified").innerHTML =
             "Last Modified Time: " + lastCommitDate.toLocaleString();
     } 
     catch (error) {
         document.getElementById("lastModified").innerHTML =
-            "Last Modified Time: Unable to fetch";
-        console.error(error);
+            "Last Modified Time: Unable to fetch.";
     }
 }
 
-// Click button = re-check timestamp live from GitHub
 function verifyLastUpdatedTime() {
     getLastUpdatedTime();
 }
 
-// Load timestamp on page load
 getLastUpdatedTime();
 </script>
 
 </body>
 </html>
+
 
